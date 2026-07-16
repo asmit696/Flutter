@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/acme_home.dart';
+import 'package:flutter_application_1/common/simple_contact_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +11,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'My App', home: const AcmeHome());
+    return MaterialApp(title: 'My App', home: const SimpleContactList());
   }
 }
