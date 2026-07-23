@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/common/custom_form_field.dart';
 import 'package:flutter_application_1/common/custom_text.dart';
+import 'package:flutter_application_1/screens/sign_up_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -16,32 +17,42 @@ class LoginPage extends StatelessWidget {
           children: [
             CustomText(text: "Welcome", fontSize: 30),
             SizedBox(height: 10),
+
             CustomText(
               text: "Enter Your email address to signin",
               color: const Color.fromARGB(255, 177, 165, 165),
             ),
+
             CustomText(
               text: "Enjoy your food ",
               color: const Color.fromARGB(255, 177, 165, 165),
             ),
+
             SizedBox(height: 30),
+
             Customformfield(hintText: "enter your email", ispassword: false),
+
             SizedBox(height: 20),
+
             Customformfield(hintText: "enter your password", ispassword: true),
+
             SizedBox(height: 20),
+
             Align(
               alignment: Alignment.topRight,
               child: CustomText(
-                text: "Forogt Password?",
+                text: "Forgot Password?",
                 color: const Color.fromARGB(96, 80, 72, 72),
                 fontSize: 15,
               ),
             ),
+
             SizedBox(height: 20),
+
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => {},
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 15),
@@ -49,29 +60,46 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
+
             SizedBox(height: 20),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomText(text: "Dont have an account?"),
                 SizedBox(width: 10),
-                CustomText(
-                  text: "Create Account",
-                  color: Colors.green,
-                  fontSize: 15,
+
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignupPage(),
+                      ),
+                    );
+                  },
+                  child: CustomText(
+                    text: "Create Account",
+                    color: Colors.green,
+                    fontSize: 15,
+                  ),
                 ),
               ],
             ),
+
             SizedBox(height: 15),
+
             Align(
               alignment: Alignment.center,
               child: CustomText(text: "Or", fontSize: 15),
             ),
+
             SizedBox(height: 20),
+
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => {},
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 26, 38, 109),
                 ),
@@ -84,11 +112,13 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
+
             SizedBox(height: 10),
+
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => {},
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 47, 109, 224),
                 ),

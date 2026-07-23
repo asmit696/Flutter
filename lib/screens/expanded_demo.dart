@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/common/custom_text.dart';
-import 'package:flutter_application_1/item_page.dart';
-import 'package:flutter_application_1/simple_contact_list.dart';
+import 'package:flutter_application_1/screens/item_page.dart';
+import 'package:flutter_application_1/screens/simple_contact_list.dart';
 
 class ExpandedDemo extends StatelessWidget {
   const ExpandedDemo({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/common/custom_text.dart';
-import 'package:flutter_application_1/product_details.dart';
+import 'package:flutter_application_1/screens/product_details.dart';
 
 class CustomProductCard extends StatelessWidget {
   final String name;
